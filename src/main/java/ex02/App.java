@@ -5,7 +5,6 @@
 package ex02;
 
 import java.util.Scanner;
-
 /*
 Exercise 2 - Counting the Number of Characters
 Create a program that prompts for an input string and displays output that shows the input string and the number of characters the string contains.
@@ -27,5 +26,14 @@ Implement this program using a graphical user interface and update the character
  */
 
 public class App {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("What is the input string? ");
 
+        // input
+        String inputString = in.nextLine();
+
+        // output using built-in function length()
+        System.out.println(inputString + " has " + inputString.length() + " characters.");
+    }
 }
